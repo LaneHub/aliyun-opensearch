@@ -18,8 +18,8 @@
  * under the License.
  */
 
-$basePath = __DIR__ . '/../';
-require_once $basePath . 'Thrift/ClassLoader/ThriftClassLoader.php';
+$basePath = __DIR__ . '/../../';
+require_once $basePath . 'OpenSearch/Thrift/ClassLoader/ThriftClassLoader.php';
 
 use Thrift\ClassLoader\ThriftClassLoader;
 
