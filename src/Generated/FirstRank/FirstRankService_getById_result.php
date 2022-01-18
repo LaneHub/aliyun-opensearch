@@ -1,13 +1,15 @@
 <?php
-namespace OpenSearch\Generated\App;
+
+namespace OpenSearch\Generated\FirstRank;
+
 use Thrift\Exception\TProtocolException;
 use Thrift\Type\TType;
 
-class AppService_save_result {
+class FirstRankService_getById_result {
     static $_TSPEC;
 
     /**
-     * @var \OpenSearch\Generated\Common\OpenSearchResult
+     * @var \OpenSearch\Generated\FirstRank\FirstRank
      */
     public $success = null;
     /**
@@ -25,7 +27,7 @@ class AppService_save_result {
                 0 => array(
                     'var' => 'success',
                     'type' => TType::STRUCT,
-                    'class' => '\OpenSearch\Generated\Common\OpenSearchResult',
+                    'class' => '\OpenSearch\Generated\FirstRank\FirstRank',
                 ),
                 1 => array(
                     'var' => 'error',
@@ -53,7 +55,7 @@ class AppService_save_result {
     }
 
     public function getName() {
-        return 'AppService_save_result';
+        return 'FirstRankService_getById_result';
     }
 
     public function read($input)
@@ -73,7 +75,7 @@ class AppService_save_result {
             {
                 case 0:
                     if ($ftype == TType::STRUCT) {
-                        $this->success = new \OpenSearch\Generated\Common\OpenSearchResult();
+                        $this->success = new \OpenSearch\Generated\FirstRank\FirstRank();
                         $xfer += $this->success->read($input);
                     } else {
                         $xfer += $input->skip($ftype);
@@ -107,7 +109,7 @@ class AppService_save_result {
 
     public function write($output) {
         $xfer = 0;
-        $xfer += $output->writeStructBegin('AppService_save_result');
+        $xfer += $output->writeStructBegin('FirstRankService_getById_result');
         if ($this->success !== null) {
             if (!is_object($this->success)) {
                 throw new TProtocolException('Bad type in structure.', TProtocolException::INVALID_DATA);

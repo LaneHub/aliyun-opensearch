@@ -1,13 +1,16 @@
 <?php
-namespace OpenSearch\Generated\App;
+
+namespace OpenSearch\Generated\FirstRank;
+
+
 use Thrift\Exception\TProtocolException;
 use Thrift\Type\TType;
 
-class AppService_save_result {
+class FirstRankService_listAll_result {
     static $_TSPEC;
 
     /**
-     * @var \OpenSearch\Generated\Common\OpenSearchResult
+     * @var \OpenSearch\Generated\FirstRank\FirstRank[]
      */
     public $success = null;
     /**
@@ -24,8 +27,12 @@ class AppService_save_result {
             self::$_TSPEC = array(
                 0 => array(
                     'var' => 'success',
-                    'type' => TType::STRUCT,
-                    'class' => '\OpenSearch\Generated\Common\OpenSearchResult',
+                    'type' => TType::LST,
+                    'etype' => TType::STRUCT,
+                    'elem' => array(
+                        'type' => TType::STRUCT,
+                        'class' => '\OpenSearch\Generated\FirstRank\FirstRank',
+                    ),
                 ),
                 1 => array(
                     'var' => 'error',
@@ -53,7 +60,7 @@ class AppService_save_result {
     }
 
     public function getName() {
-        return 'AppService_save_result';
+        return 'FirstRankService_listAll_result';
     }
 
     public function read($input)
@@ -72,9 +79,19 @@ class AppService_save_result {
             switch ($fid)
             {
                 case 0:
-                    if ($ftype == TType::STRUCT) {
-                        $this->success = new \OpenSearch\Generated\Common\OpenSearchResult();
-                        $xfer += $this->success->read($input);
+                    if ($ftype == TType::LST) {
+                        $this->success = array();
+                        $_size7 = 0;
+                        $_etype10 = 0;
+                        $xfer += $input->readListBegin($_etype10, $_size7);
+                        for ($_i11 = 0; $_i11 < $_size7; ++$_i11)
+                        {
+                            $elem12 = null;
+                            $elem12 = new \OpenSearch\Generated\FirstRank\FirstRank();
+                            $xfer += $elem12->read($input);
+                            $this->success []= $elem12;
+                        }
+                        $xfer += $input->readListEnd();
                     } else {
                         $xfer += $input->skip($ftype);
                     }
@@ -107,13 +124,22 @@ class AppService_save_result {
 
     public function write($output) {
         $xfer = 0;
-        $xfer += $output->writeStructBegin('AppService_save_result');
+        $xfer += $output->writeStructBegin('FirstRankService_listAll_result');
         if ($this->success !== null) {
-            if (!is_object($this->success)) {
+            if (!is_array($this->success)) {
                 throw new TProtocolException('Bad type in structure.', TProtocolException::INVALID_DATA);
             }
-            $xfer += $output->writeFieldBegin('success', TType::STRUCT, 0);
-            $xfer += $this->success->write($output);
+            $xfer += $output->writeFieldBegin('success', TType::LST, 0);
+            {
+                $output->writeListBegin(TType::STRUCT, count($this->success));
+                {
+                    foreach ($this->success as $iter13)
+                    {
+                        $xfer += $iter13->write($output);
+                    }
+                }
+                $output->writeListEnd();
+            }
             $xfer += $output->writeFieldEnd();
         }
         if ($this->error !== null) {

@@ -1,9 +1,11 @@
 <?php
+
 namespace OpenSearch\Generated\App;
+
 use Thrift\Exception\TProtocolException;
 use Thrift\Type\TType;
 
-class AppService_save_result {
+class AppService_updateById_result {
     static $_TSPEC;
 
     /**
@@ -53,7 +55,7 @@ class AppService_save_result {
     }
 
     public function getName() {
-        return 'AppService_save_result';
+        return 'AppService_updateById_result';
     }
 
     public function read($input)
@@ -107,7 +109,7 @@ class AppService_save_result {
 
     public function write($output) {
         $xfer = 0;
-        $xfer += $output->writeStructBegin('AppService_save_result');
+        $xfer += $output->writeStructBegin('AppService_updateById_result');
         if ($this->success !== null) {
             if (!is_object($this->success)) {
                 throw new TProtocolException('Bad type in structure.', TProtocolException::INVALID_DATA);

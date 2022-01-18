@@ -1,13 +1,14 @@
 <?php
-namespace OpenSearch\Generated\App;
-use Thrift\Exception\TProtocolException;
+
+namespace OpenSearch\Generated\OpenSearch;
+
 use Thrift\Type\TType;
 
-class AppService_save_result {
+class OpenSearchService_call_result {
     static $_TSPEC;
 
     /**
-     * @var \OpenSearch\Generated\Common\OpenSearchResult
+     * @var string
      */
     public $success = null;
     /**
@@ -24,8 +25,7 @@ class AppService_save_result {
             self::$_TSPEC = array(
                 0 => array(
                     'var' => 'success',
-                    'type' => TType::STRUCT,
-                    'class' => '\OpenSearch\Generated\Common\OpenSearchResult',
+                    'type' => TType::STRING,
                 ),
                 1 => array(
                     'var' => 'error',
@@ -53,7 +53,7 @@ class AppService_save_result {
     }
 
     public function getName() {
-        return 'AppService_save_result';
+        return 'OpenSearchService_call_result';
     }
 
     public function read($input)
@@ -72,9 +72,8 @@ class AppService_save_result {
             switch ($fid)
             {
                 case 0:
-                    if ($ftype == TType::STRUCT) {
-                        $this->success = new \OpenSearch\Generated\Common\OpenSearchResult();
-                        $xfer += $this->success->read($input);
+                    if ($ftype == TType::STRING) {
+                        $xfer += $input->readString($this->success);
                     } else {
                         $xfer += $input->skip($ftype);
                     }
@@ -107,13 +106,10 @@ class AppService_save_result {
 
     public function write($output) {
         $xfer = 0;
-        $xfer += $output->writeStructBegin('AppService_save_result');
+        $xfer += $output->writeStructBegin('OpenSearchService_call_result');
         if ($this->success !== null) {
-            if (!is_object($this->success)) {
-                throw new TProtocolException('Bad type in structure.', TProtocolException::INVALID_DATA);
-            }
-            $xfer += $output->writeFieldBegin('success', TType::STRUCT, 0);
-            $xfer += $this->success->write($output);
+            $xfer += $output->writeFieldBegin('success', TType::STRING, 0);
+            $xfer += $output->writeString($this->success);
             $xfer += $output->writeFieldEnd();
         }
         if ($this->error !== null) {

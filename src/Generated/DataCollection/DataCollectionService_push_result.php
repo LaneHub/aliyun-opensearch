@@ -1,21 +1,23 @@
 <?php
-namespace OpenSearch\Generated\App;
+
+namespace OpenSearch\Generated\DataCollection;
+
 use Thrift\Exception\TProtocolException;
 use Thrift\Type\TType;
 
-class AppService_save_result {
+class DataCollectionService_push_result {
     static $_TSPEC;
 
     /**
-     * @var \OpenSearch\Generated\Common\OpenSearchResult
+     * @var \Generated\Common\OpenSearchResult
      */
     public $success = null;
     /**
-     * @var \OpenSearch\Generated\Common\OpenSearchException
+     * @var \Generated\Common\OpenSearchException
      */
     public $error = null;
     /**
-     * @var \OpenSearch\Generated\Common\OpenSearchClientException
+     * @var \Generated\Common\OpenSearchClientException
      */
     public $e = null;
 
@@ -25,17 +27,17 @@ class AppService_save_result {
                 0 => array(
                     'var' => 'success',
                     'type' => TType::STRUCT,
-                    'class' => '\OpenSearch\Generated\Common\OpenSearchResult',
+                    'class' => '\Generated\Common\OpenSearchResult',
                 ),
                 1 => array(
                     'var' => 'error',
                     'type' => TType::STRUCT,
-                    'class' => '\OpenSearch\Generated\Common\OpenSearchException',
+                    'class' => '\Generated\Common\OpenSearchException',
                 ),
                 2 => array(
                     'var' => 'e',
                     'type' => TType::STRUCT,
-                    'class' => '\OpenSearch\Generated\Common\OpenSearchClientException',
+                    'class' => '\Generated\Common\OpenSearchClientException',
                 ),
             );
         }
@@ -53,7 +55,7 @@ class AppService_save_result {
     }
 
     public function getName() {
-        return 'AppService_save_result';
+        return 'DataCollectionService_push_result';
     }
 
     public function read($input)
@@ -73,7 +75,7 @@ class AppService_save_result {
             {
                 case 0:
                     if ($ftype == TType::STRUCT) {
-                        $this->success = new \OpenSearch\Generated\Common\OpenSearchResult();
+                        $this->success = new \Generated\Common\OpenSearchResult();
                         $xfer += $this->success->read($input);
                     } else {
                         $xfer += $input->skip($ftype);
@@ -81,7 +83,7 @@ class AppService_save_result {
                     break;
                 case 1:
                     if ($ftype == TType::STRUCT) {
-                        $this->error = new \OpenSearch\Generated\Common\OpenSearchException();
+                        $this->error = new \Generated\Common\OpenSearchException();
                         $xfer += $this->error->read($input);
                     } else {
                         $xfer += $input->skip($ftype);
@@ -89,7 +91,7 @@ class AppService_save_result {
                     break;
                 case 2:
                     if ($ftype == TType::STRUCT) {
-                        $this->e = new \OpenSearch\Generated\Common\OpenSearchClientException();
+                        $this->e = new \Generated\Common\OpenSearchClientException();
                         $xfer += $this->e->read($input);
                     } else {
                         $xfer += $input->skip($ftype);
@@ -107,7 +109,7 @@ class AppService_save_result {
 
     public function write($output) {
         $xfer = 0;
-        $xfer += $output->writeStructBegin('AppService_save_result');
+        $xfer += $output->writeStructBegin('DataCollectionService_push_result');
         if ($this->success !== null) {
             if (!is_object($this->success)) {
                 throw new TProtocolException('Bad type in structure.', TProtocolException::INVALID_DATA);
