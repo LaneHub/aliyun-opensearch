@@ -4,9 +4,9 @@
 namespace OpenSearch\Generated\Summary;
 
 
-use Thrift\Exception\TApplicationException;
-use Thrift\Protocol\TBinaryProtocolAccelerated;
-use Thrift\Type\TMessageType;
+use OpenSearch\Thrift\Exception\TApplicationException;
+use OpenSearch\Thrift\Protocol\TBinaryProtocolAccelerated;
+use OpenSearch\Thrift\Type\TMessageType;
 
 class SummaryServiceClient implements \OpenSearch\Generated\Summary\SummaryServiceIf {
     protected $input_ = null;

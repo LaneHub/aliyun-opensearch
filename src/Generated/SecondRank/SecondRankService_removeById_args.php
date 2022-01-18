@@ -4,7 +4,7 @@
 namespace OpenSearch\Generated\SecondRank;
 
 
-use Thrift\Type\TType;
+use OpenSearch\Thrift\Type\TType;
 
 class SecondRankService_removeById_args {
     static $_TSPEC;

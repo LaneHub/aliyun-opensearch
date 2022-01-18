@@ -4,7 +4,7 @@
 namespace OpenSearch\Generated\Search;
 
 
-use Thrift\Type\TType;
+use OpenSearch\Thrift\Type\TType;
 
 /**
  * 添加统计信息(aggregate)

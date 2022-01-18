@@ -4,8 +4,8 @@
 namespace OpenSearch\Generated\Suggestion;
 
 
-use Thrift\Exception\TProtocolException;
-use Thrift\Type\TType;
+use OpenSearch\Thrift\Exception\TProtocolException;
+use OpenSearch\Thrift\Type\TType;
 
 /**
  * 下拉提示参数

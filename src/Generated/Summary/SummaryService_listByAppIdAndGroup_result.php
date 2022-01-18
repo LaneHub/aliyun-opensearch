@@ -4,8 +4,8 @@
 namespace OpenSearch\Generated\Summary;
 
 
-use Thrift\Exception\TProtocolException;
-use Thrift\Type\TType;
+use OpenSearch\Thrift\Exception\TProtocolException;
+use OpenSearch\Thrift\Type\TType;
 
 class SummaryService_listByAppIdAndGroup_result {
     static $_TSPEC;

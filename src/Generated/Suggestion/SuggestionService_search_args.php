@@ -4,7 +4,7 @@
 namespace OpenSearch\Generated\Suggestion;
 
 
-use Thrift\Type\TType;
+use OpenSearch\Thrift\Type\TType;
 
 class SuggestionService_search_args {
     static $_TSPEC;

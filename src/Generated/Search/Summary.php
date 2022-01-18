@@ -4,7 +4,7 @@
 namespace OpenSearch\Generated\Search;
 
 
-use Thrift\Type\TType;
+use OpenSearch\Thrift\Type\TType;
 
 /**
  * 增加了此内容后，fieldName字段可能会被截断、飘红等。

@@ -4,7 +4,7 @@
 namespace OpenSearch\Generated\Summary;
 
 
-use Thrift\Type\TType;
+use OpenSearch\Thrift\Type\TType;
 
 class SummaryService_listByAppIdAndGroup_args {
     static $_TSPEC;

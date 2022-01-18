@@ -4,9 +4,9 @@
 namespace OpenSearch\Generated\Search;
 
 
-use Thrift\Exception\TApplicationException;
-use Thrift\Protocol\TBinaryProtocolAccelerated;
-use Thrift\Type\TMessageType;
+use OpenSearch\Thrift\Exception\TApplicationException;
+use OpenSearch\Thrift\Protocol\TBinaryProtocolAccelerated;
+use OpenSearch\Thrift\Type\TMessageType;
 
 class OpenSearchSearcherServiceClient extends \OpenSearch\Generated\GeneralSearcher\GeneralSearcherServiceClient implements \OpenSearch\Generated\Search\OpenSearchSearcherServiceIf {
     public function __construct($input, $output=null) {

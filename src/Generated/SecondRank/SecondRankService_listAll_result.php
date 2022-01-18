@@ -4,8 +4,8 @@
 namespace OpenSearch\Generated\SecondRank;
 
 
-use Thrift\Exception\TProtocolException;
-use Thrift\Type\TType;
+use OpenSearch\Thrift\Exception\TProtocolException;
+use OpenSearch\Thrift\Type\TType;
 
 class SecondRankService_listAll_result {
     static $_TSPEC;
