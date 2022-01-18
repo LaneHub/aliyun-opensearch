@@ -4,8 +4,8 @@ namespace OpenSearch\Generated\OpenSearch;
 
 // HELPER FUNCTIONS AND STRUCTURES
 
-use Thrift\Exception\TProtocolException;
-use Thrift\Type\TType;
+use OpenSearch\Thrift\Exception\TProtocolException;
+use OpenSearch\Thrift\Type\TType;
 
 class OpenSearchService_call_args {
     static $_TSPEC;

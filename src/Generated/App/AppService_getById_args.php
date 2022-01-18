@@ -1,6 +1,6 @@
 <?php
 namespace OpenSearch\Generated\App;
-use Thrift\Type\TType;
+use OpenSearch\Thrift\Type\TType;
 
 class AppService_getById_args {
     static $_TSPEC;

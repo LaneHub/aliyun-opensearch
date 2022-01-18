@@ -2,8 +2,8 @@
 
 namespace OpenSearch\Generated\DataCollection;
 
-use Thrift\Exception\TProtocolException;
-use Thrift\Type\TType;
+use OpenSearch\Thrift\Exception\TProtocolException;
+use OpenSearch\Thrift\Type\TType;
 
 class DataCollectionService_push_result {
     static $_TSPEC;

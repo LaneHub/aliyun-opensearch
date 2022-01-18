@@ -1,9 +1,9 @@
 <?php
 namespace OpenSearch\Generated\App;
 
-use Thrift\Exception\TApplicationException;
-use Thrift\Protocol\TBinaryProtocolAccelerated;
-use Thrift\Type\TMessageType;
+use OpenSearch\Thrift\Exception\TApplicationException;
+use OpenSearch\Thrift\Protocol\TBinaryProtocolAccelerated;
+use OpenSearch\Thrift\Type\TMessageType;
 
 class AppServiceClient implements \OpenSearch\Generated\App\AppServiceIf {
     protected $input_ = null;

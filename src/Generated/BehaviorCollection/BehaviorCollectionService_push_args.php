@@ -2,7 +2,7 @@
 
 namespace OpenSearch\Generated\BehaviorCollection;
 
-use Thrift\Type\TType;
+use OpenSearch\Thrift\Type\TType;
 
 /**
  * @deprecated

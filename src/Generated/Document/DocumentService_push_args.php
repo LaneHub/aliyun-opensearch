@@ -4,7 +4,7 @@ namespace OpenSearch\Generated\Document;
 
 // HELPER FUNCTIONS AND STRUCTURES
 
-use Thrift\Type\TType;
+use OpenSearch\Thrift\Type\TType;
 
 class DocumentService_push_args {
     static $_TSPEC;

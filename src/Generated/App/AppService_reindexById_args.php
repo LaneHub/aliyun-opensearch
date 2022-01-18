@@ -2,7 +2,7 @@
 
 namespace OpenSearch\Generated\App;
 
-use Thrift\Type\TType;
+use OpenSearch\Thrift\Type\TType;
 
 class AppService_reindexById_args {
     static $_TSPEC;

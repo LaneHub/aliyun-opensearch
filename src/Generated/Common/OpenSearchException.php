@@ -2,8 +2,8 @@
 
 namespace OpenSearch\Generated\Common;
 
-use Thrift\Exception\TException;
-use Thrift\Type\TType;
+use OpenSearch\Thrift\Exception\TException;
+use OpenSearch\Thrift\Type\TType;
 
 class OpenSearchException extends TException {
     static $_TSPEC;

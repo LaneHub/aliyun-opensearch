@@ -1,20 +1,23 @@
 {
-    "name": "yuanling/aliyun-opensearch",
-    "description": "aliyun opensearch sdk",
-    "type": "library",
-    "license": "MIT",
-    "minimum-stability": "dev",
-    "authors": [
-        {
-            "name": "yy",
-            "email": "yy@weiheinc.com"
-        }
-    ],
-    "autoload": {
-        "psr-4": {
-            "OpenSearch\\": "src/"
-        }
-    },
-    "require": {
+  "name": "yuanling/aliyun-opensearch",
+  "description": "aliyun opensearch sdk",
+  "type": "library",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "yy",
+      "email": "yy@weiheinc.com"
     }
+  ],
+  "autoload": {
+    "psr-4": {
+      "OpenSearch\\": "src/"
+    }
+  },
+  "require": {
+    "ext-json": "*",
+    "ext-curl": "*",
+    "ext-mbstring": "*"
+  }
 }

@@ -20,13 +20,13 @@
  * @package thrift.processor
  */
 
-namespace Thrift;
+namespace OpenSearch\Thrift;
 
-use Thrift\Exception\TException;
-use Thrift\Protocol\TProtocol;
-use Thrift\Protocol\TMultiplexedProtocol;
-use Thrift\Protocol\TProtocolDecorator;
-use Thrift\Type\TMessageType;
+use OpenSearch\Thrift\Exception\TException;
+use OpenSearch\Thrift\Protocol\TProtocol;
+use OpenSearch\Thrift\Protocol\TMultiplexedProtocol;
+use OpenSearch\Thrift\Protocol\TProtocolDecorator;
+use OpenSearch\Thrift\Type\TMessageType;
 
 /**
  * <code>TMultiplexedProcessor</code> is a Processor allowing
@@ -117,27 +117,4 @@ class TMultiplexedProcessor
     }
 }
 
-/**
- *  Our goal was to work with any protocol. In order to do that, we needed
- *  to allow them to call readMessageBegin() and get the Message in exactly
- *  the standard format, without the service name prepended to the Message name.
- */
-class StoredMessageProtocol extends TProtocolDecorator
-{
-    private $fname_, $mtype_, $rseqid_;
 
-    public function __construct(TProtocol $protocol, $fname, $mtype, $rseqid)
-    {
-        parent::__construct($protocol);
-        $this->fname_  = $fname;
-        $this->mtype_  = $mtype;
-        $this->rseqid_ = $rseqid;
-    }
-
-    public function readMessageBegin(&$name, &$type, &$seqid)
-    {
-        $name  = $this->fname_;
-        $type  = $this->mtype_;
-        $seqid = $this->rseqid_;
-    }
-}

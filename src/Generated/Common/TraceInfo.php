@@ -2,7 +2,7 @@
 
 namespace OpenSearch\Generated\Common;
 
-use Thrift\Type\TType;
+use OpenSearch\Thrift\Type\TType;
 
 class TraceInfo {
     static $_TSPEC;

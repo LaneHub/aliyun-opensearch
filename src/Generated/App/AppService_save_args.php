@@ -2,7 +2,7 @@
 namespace OpenSearch\Generated\App;
 // HELPER FUNCTIONS AND STRUCTURES
 
-use Thrift\Type\TType;
+use OpenSearch\Thrift\Type\TType;
 
 class AppService_save_args {
     static $_TSPEC;

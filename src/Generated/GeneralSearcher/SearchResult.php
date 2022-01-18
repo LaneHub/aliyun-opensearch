@@ -2,7 +2,7 @@
 
 namespace OpenSearch\Generated\GeneralSearcher;
 
-use Thrift\Type\TType;
+use OpenSearch\Thrift\Type\TType;
 
 class SearchResult {
     static $_TSPEC;

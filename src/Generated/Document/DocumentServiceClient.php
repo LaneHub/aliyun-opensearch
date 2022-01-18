@@ -2,9 +2,9 @@
 
 namespace OpenSearch\Generated\Document;
 
-use Thrift\Exception\TApplicationException;
-use Thrift\Protocol\TBinaryProtocolAccelerated;
-use Thrift\Type\TMessageType;
+use OpenSearch\Thrift\Exception\TApplicationException;
+use OpenSearch\Thrift\Protocol\TBinaryProtocolAccelerated;
+use OpenSearch\Thrift\Type\TMessageType;
 
 class DocumentServiceClient implements \OpenSearch\Generated\Document\DocumentServiceIf {
     protected $input_ = null;

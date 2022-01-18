@@ -2,7 +2,7 @@
 
 namespace OpenSearch\Generated\OpenSearch;
 
-use Thrift\Type\TType;
+use OpenSearch\Thrift\Type\TType;
 
 class OpenSearchService_call_result {
     static $_TSPEC;

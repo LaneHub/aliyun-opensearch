@@ -5,7 +5,7 @@ namespace OpenSearch\Generated\BehaviorCollection;
 /**
  * @deprecated
  */
-final class Constant extends \Thrift\Type\TConstant {
+final class Constant extends \OpenSearch\Thrift\Type\TConstant {
     static protected $DOC_KEY_CMD;
     static protected $DOC_KEY_FIELDS;
 

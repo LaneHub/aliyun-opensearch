@@ -3,7 +3,7 @@
 namespace OpenSearch\Generated\FirstRank;
 
 
-use Thrift\Type\TType;
+use OpenSearch\Thrift\Type\TType;
 
 class FirstRankService_listByAppId_args {
     static $_TSPEC;

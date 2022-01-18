@@ -2,9 +2,9 @@
 
 namespace OpenSearch\Generated\DataCollection;
 
-use Thrift\Exception\TApplicationException;
-use Thrift\Protocol\TBinaryProtocolAccelerated;
-use Thrift\Type\TMessageType;
+use OpenSearch\Thrift\Exception\TApplicationException;
+use OpenSearch\Thrift\Protocol\TBinaryProtocolAccelerated;
+use OpenSearch\Thrift\Type\TMessageType;
 
 class DataCollectionServiceClient implements \OpenSearch\Generated\DataCollection\DataCollectionServiceIf {
     protected $input_ = null;

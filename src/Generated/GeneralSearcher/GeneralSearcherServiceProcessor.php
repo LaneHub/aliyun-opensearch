@@ -4,9 +4,9 @@ namespace OpenSearch\Generated\GeneralSearcher;
 
 // HELPER FUNCTIONS AND STRUCTURES
 
-use Thrift\Exception\TApplicationException;
-use Thrift\Type\TMessageType;
-use Thrift\Type\TType;
+use OpenSearch\Thrift\Exception\TApplicationException;
+use OpenSearch\Thrift\Type\TMessageType;
+use OpenSearch\Thrift\Type\TType;
 
 class GeneralSearcherServiceProcessor {
     protected $handler_ = null;

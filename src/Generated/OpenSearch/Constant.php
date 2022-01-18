@@ -3,7 +3,7 @@
 namespace OpenSearch\Generated\OpenSearch;
 
 
-final class Constant extends \Thrift\Type\TConstant {
+final class Constant extends \OpenSearch\Thrift\Type\TConstant {
     static protected $VERSION;
 
     static protected function init_VERSION() {

@@ -2,10 +2,10 @@
 
 namespace OpenSearch\Generated\OpenSearch;
 
-use Thrift\Exception\TApplicationException;
-use Thrift\Protocol\TBinaryProtocolAccelerated;
-use Thrift\Type\TMessageType;
-use Thrift\Type\TType;
+use OpenSearch\Thrift\Exception\TApplicationException;
+use OpenSearch\Thrift\Protocol\TBinaryProtocolAccelerated;
+use OpenSearch\Thrift\Type\TMessageType;
+use OpenSearch\Thrift\Type\TType;
 
 class OpenSearchServiceProcessor {
     protected $handler_ = null;

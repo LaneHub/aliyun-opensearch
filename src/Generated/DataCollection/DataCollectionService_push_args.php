@@ -4,7 +4,7 @@ namespace OpenSearch\Generated\DataCollection;
 
 // HELPER FUNCTIONS AND STRUCTURES
 
-use Thrift\Type\TType;
+use OpenSearch\Thrift\Type\TType;
 
 class DataCollectionService_push_args {
     static $_TSPEC;

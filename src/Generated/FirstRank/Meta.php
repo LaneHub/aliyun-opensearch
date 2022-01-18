@@ -2,7 +2,7 @@
 
 namespace OpenSearch\Generated\FirstRank;
 
-use Thrift\Type\TType;
+use OpenSearch\Thrift\Type\TType;
 
 class Meta {
     static $_TSPEC;

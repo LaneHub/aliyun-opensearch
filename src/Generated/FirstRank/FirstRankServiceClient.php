@@ -2,9 +2,9 @@
 
 namespace OpenSearch\Generated\FirstRank;
 
-use Thrift\Exception\TApplicationException;
-use Thrift\Protocol\TBinaryProtocolAccelerated;
-use Thrift\Type\TMessageType;
+use OpenSearch\Thrift\Exception\TApplicationException;
+use OpenSearch\Thrift\Protocol\TBinaryProtocolAccelerated;
+use OpenSearch\Thrift\Type\TMessageType;
 
 class FirstRankServiceClient implements \OpenSearch\Generated\FirstRank\FirstRankServiceIf {
     protected $input_ = null;
