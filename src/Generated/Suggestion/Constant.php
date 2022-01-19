@@ -4,7 +4,7 @@
 namespace OpenSearch\Generated\Suggestion;
 
 
-final class Constant extends \Thrift\Type\TConstant {
+final class Constant extends \OpenSearch\Thrift\Type\TConstant {
     static protected $PARAM_QUERY;
     static protected $PARAM_HIT;
     static protected $PARAM_USER_ID;

@@ -4,7 +4,7 @@
 namespace OpenSearch\Generated\Search;
 
 
-final class Constant extends \Thrift\Type\TConstant {
+final class Constant extends \OpenSearch\Thrift\Type\TConstant {
     static protected $CONFIG_CLAUSE_START;
     static protected $CONFIG_CLAUSE_HIT;
     static protected $CONFIG_CLAUSE_RERANK_SIZE;
